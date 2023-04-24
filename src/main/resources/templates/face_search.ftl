@@ -2,8 +2,8 @@
 <div class="layui-row">
     <div class="layui-col-xs7 layui-col-md-offset3" align="center">
         <div style="margin: 0,auto; width: 800px;height: 80px;background-color: #383939">
-            <div style="margin: 0,auto;height: 80px;text-align:center;line-height:80px;font-size: 40px;color: #E51C23">
-                人脸识别系统
+            <div style="margin: 0,auto;height: 80px;text-align:center;line-height:80px;font-size: 40px;color: #31a0c9">
+                面面人脸识别
             </div>
         </div>
 

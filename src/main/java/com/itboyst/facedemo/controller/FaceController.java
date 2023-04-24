@@ -57,6 +57,9 @@ public class FaceController {
     public Result<Object> faceAdd(@RequestParam("file") String file, @RequestParam("groupId") Integer groupId, @RequestParam("name") String name) {
 
         try {
+//            System.out.println(file);
+//            System.out.println(groupId);
+//            System.out.println(name);
             if (file == null) {
                 return Results.newFailedResult("file is null");
             }
@@ -69,13 +72,13 @@ public class FaceController {
 
             byte[] decode = Base64.decode(base64Process(file));
             ImageInfo imageInfo = ImageFactory.getRGBData(decode);
-
+//            System.out.println("第一步");
             //人脸特征获取
             byte[] bytes = faceEngineService.extractFaceFeature(imageInfo);
             if (bytes == null) {
                 return Results.newFailedResult(ErrorCodeEnum.NO_FACE_DETECTED);
             }
-
+//            System.out.println("第二步");
             UserFaceInfo userFaceInfo = new UserFaceInfo();
             userFaceInfo.setName(name);
             userFaceInfo.setGroupId(groupId);

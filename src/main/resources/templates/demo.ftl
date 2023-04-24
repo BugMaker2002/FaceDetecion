@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>人脸识别系统</title>
+    <title>面面人脸识别</title>
 
     <link rel="stylesheet" href="layui/css/layui.css">
 
